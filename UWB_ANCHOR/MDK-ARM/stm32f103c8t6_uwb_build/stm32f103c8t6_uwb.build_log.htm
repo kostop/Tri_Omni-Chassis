@@ -1,0 +1,119 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: D V, BR, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Program Files\Keil\Core\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\Sea Jackal\Gidro\Modem\stm32f103c8t6_uwb\MDK-ARM\stm32f103c8t6_uwb.uvprojx
+Project File Date:  08/04/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Program Files\Keil\Core\ARM\ARMCC\Bin'
+Build target 'stm32f103c8t6_uwb'
+compiling uwb_simple_distance_meter.c...
+..\UWB_Lib\Inc\uwb_ui.h(24): warning:  #1295-D: Deprecated declaration UWB_ActivateRX - give arg types
+  UWB_status UWB_ActivateRX();
+..\UWB_Lib\Inc\uwb_ui.h(26): warning:  #1295-D: Deprecated declaration UWB_GetTxTimestamp64 - give arg types
+  uint64_t UWB_GetTxTimestamp64();
+..\UWB_Lib\Inc\uwb_ui.h(27): warning:  #1295-D: Deprecated declaration UWB_GetRxTimestamp64 - give arg types
+  uint64_t UWB_GetRxTimestamp64();
+..\UWB_Lib\Inc\uwb_ui.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\UWB_Lib\Inc\uwb_simple_distance_meter.h(40): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\UWB_Lib\Src\uwb_simple_distance_meter.c(92): warning:  #1-D: last line of file ends without a newline
+  }
+..\UWB_Lib\Src\uwb_simple_distance_meter.c: 6 warnings, 0 errors
+compiling tx_wait_resp_example.c...
+..\UWB_Lib\Inc\uwb_ui.h(24): warning:  #1295-D: Deprecated declaration UWB_ActivateRX - give arg types
+  UWB_status UWB_ActivateRX();
+..\UWB_Lib\Inc\uwb_ui.h(26): warning:  #1295-D: Deprecated declaration UWB_GetTxTimestamp64 - give arg types
+  uint64_t UWB_GetTxTimestamp64();
+..\UWB_Lib\Inc\uwb_ui.h(27): warning:  #1295-D: Deprecated declaration UWB_GetRxTimestamp64 - give arg types
+  uint64_t UWB_GetRxTimestamp64();
+..\UWB_Lib\Inc\uwb_ui.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\UWB_Lib\Inc\uwb_simple_distance_meter.h(40): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\examples\ex_03a_tx_wait_resp\tx_wait_resp_example.c(122): warning:  #177-D: variable "sys_time_1"  was declared but never referenced
+  	uint64_t sys_time_1 = 0;
+..\examples\ex_03a_tx_wait_resp\tx_wait_resp_example.c(123): warning:  #177-D: variable "sys_time_2"  was declared but never referenced
+  	uint64_t sys_time_2 = 0;
+..\examples\ex_03a_tx_wait_resp\tx_wait_resp_example.c(155): warning:  #177-D: variable "result_time"  was declared but never referenced
+  	uint64_t result_time[10];
+..\examples\ex_03a_tx_wait_resp\tx_wait_resp_example.c: 8 warnings, 0 errors
+compiling main.c...
+..\Src\main.c(63): warning:  #1295-D: Deprecated declaration start_simple_transmiting - give arg types
+  extern int start_simple_transmiting();
+..\Src\main.c(64): warning:  #1295-D: Deprecated declaration start_simple_receiving - give arg types
+  extern int start_simple_receiving();
+..\Src\main.c(65): warning:  #1295-D: Deprecated declaration start_repeater - give arg types
+  extern void start_repeater();
+..\Src\main.c(66): warning:  #1295-D: Deprecated declaration start_distance_meter - give arg types
+  extern void start_distance_meter();
+..\Src\main.c(67): warning:  #1295-D: Deprecated declaration start_agent - give arg types
+  extern void start_agent();
+..\Src\main.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=18860 RO-data=528 RW-data=92 ZI-data=3340  
+".\stm32f103c8t6_uwb_build\stm32f103c8t6_uwb.axf" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.ARM_Compiler.1.6.3.pack
+                Keil.ARM_Compiler.1.6.3
+                Keil ARM Compiler extensions for ARM Compiler 5 and ARM Compiler 6
+   * Component: Event Recorder Variant: DAP Version: 1.4.0
+   * Component: STDOUT Variant: EVR Version: 1.2.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Compiler
+  .\RTE\_stm32f103c8t6_uwb
+  C:\Program Files\Keil\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Program Files\Keil\Packs\Keil\ARM_Compiler\1.6.3\Include
+  C:\Program Files\Keil\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+
+   * Component: Keil.ARM Compiler::Compiler:Event Recorder:DAP:1.4.0
+      Include file:  Config\EventRecorderConf.h
+      Include file:  Include\EventRecorder.h
+      Source file:   Source\EventRecorder.c
+
+   * Component: Keil.ARM Compiler::Compiler:I/O:STDOUT:EVR:1.2.0
+      Source file:   Source\retarget_io.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

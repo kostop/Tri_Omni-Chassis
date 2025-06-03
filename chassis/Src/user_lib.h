@@ -1,0 +1,6 @@
+#ifndef _USER_LIB_H
+#define _USER_LIB_H
+
+#define PI  3.1415926535897932384626433832795f
+
+#endif

@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.32.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 ooooooo, 1, LIC=NQQMA-17NIQ-MM49I-TLJCG-B6KJW-74Q2Z
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.32.0.0
+Toolchain Path:  D:\Application\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.32.0.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      CMSIS_AGDI.dll V1.32.12.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+\\10.0.0.168\stm32\code\Tri_Omni Chassis\anchor1\BPHero_UWB_Location_SourceCode_V3.1_16MHz_V4.1\Project\ds_twr_init\MDK-ARM\Project.uvprojx
+Project File Date:  06/01/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Application\Keil\ARM\ARMCC\Bin'
+Build target 'ds_twr_init'
+compiling main.c...
+..\main.c(247): warning:  #177-D: variable "final_distance"  was declared but never referenced
+      float final_distance = 0;
+..\main.c(993): warning:  #223-D: function "LCD_ClearLines" declared implicitly
+  			 LCD_ClearLines();
+..\main.c(998): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+          OLED_ShowString(0, 2,dist_str);
+..\main.c(1005): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+          OLED_ShowString(0, 4,dist_str);
+..\main.c(1011): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+          OLED_ShowString(0, 6,dist_str);
+..\main.c(1135): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		USART_puts((char*)send_msg1,len);
+..\main.c(112): warning:  #177-D: variable "frame_seq_nb_semaphore"  was declared but never referenced
+  static uint8 frame_seq_nb_semaphore = 0;
+..\main.c: 7 warnings, 0 errors
+linking...
+Program Size: Code=14052 RO-data=2996 RW-data=940 ZI-data=1788  
+FromELF: creating hex file...
+".\STM3210E-EVAL\STM3210E-EVAL.axf" - 0 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_ds_twr_init
+  D:\Application\Keil\Pack\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  D:\Application\Keil\Pack\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
